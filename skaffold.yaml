@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta15
+kind: Config
+build:
+  googleCloudBuild: 
+    projectId: cloudcomputing-348415 
+  artifacts: 
+  - image: skaffold-buildpacks 
+    buildpacks: 
+      builder: "gcr.io/buildpacks/builder:v1" 
+deploy:
+  kubectl:
+    manifests: skaffold-buildpacks/kubernetes/* 
+portForward:
+  - resourceType: deployment
+    resourcename: skaffold-buildpacks
+    port: 8080
+    localport: 9000
