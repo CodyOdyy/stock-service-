@@ -3,9 +3,10 @@ const mysql = require('mysql');
 const con = mysql.createConnection({
     host: "34.136.166.203",
     port: "3306",
-    user: "root",
-    password: "Dilanka123",
-    database: "users",
+    user: process.env.root,
+    password: process.env.Dilanka123,
+    database: process.env.users,
+    socketPath: '/cloudsql/${process.env.ceremonial-team-348412:us-central1:root}',
     insecureAuth : true
 });
 
