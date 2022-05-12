@@ -1,7 +1,7 @@
 const Hapi = require('@hapi/hapi');
 const mysql = require('mysql');
 const con = mysql.createConnection({
-    
+    host: '34.136.166.203',
     user: process.env.root,
     password: process.env.Dilanka123,
     database: process.env.users,
