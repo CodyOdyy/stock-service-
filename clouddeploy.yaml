@@ -29,7 +29,7 @@ metadata:
 description: prod cluster
 requireApproval: true
 gke:
-  cluster: projects/PROJECT_ID/locations/us-east1/clusters/cluster-prod
+  cluster: projects/cloudcomputing-348415/locations/us-east1/clusters/cluster-prod
 
 ---
 
@@ -40,6 +40,6 @@ metadata:
 description: test cluster
 requireApproval: true
 gke:
-  cluster: projects/PROJECT_ID/locations/us-east1/clusters/cluster-test
+  cluster: projects/cloudcomputing-348415/locations/us-east1/clusters/cluster-test
 
 ---
