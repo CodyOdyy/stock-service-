@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
-        role:rolling-update
+        role: rolling-update
     spec:
       containers:
       - name: nginx
