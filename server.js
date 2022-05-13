@@ -6,10 +6,10 @@ const con = mysql.createConnection({
     database: "users",
     username: "root",
     password: "Dilanka123",
-    socketPath: "/cloudsql/My First Project:us-central1:root",
+    socketPath: "/cloudsql/ceremonial-team-348412:us-central1:root",
     dialect: "mysql",
     dialectOptions: {
-          "socketPath": "/cloudsql/My First Project:us-central1:root"
+          "socketPath": "/cloudsql/ceremonial-team-348412:us-central1:root"
     },
     insecureAuth : true
  });
