@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
-        color: blue
+        role:rolling-update
     spec:
       containers:
       - name: nginx
