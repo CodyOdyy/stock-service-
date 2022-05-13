@@ -10,7 +10,9 @@ const con = mysql.createConnection({
     dialect: "mysql",
     dialectOptions: {
           "socketPath": "/cloudsql/My First Project:us-central1:root"
-    } });
+    },
+    insecureAuth : true
+ });
 
 const init = async ()=> {
 const server = Hapi.server({
