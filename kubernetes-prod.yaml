@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
+        role: rolling-update
     spec:
       containers:
       - name: nginx
@@ -34,7 +35,6 @@ spec:
     targetPort: 8080
   selector:
     app: nginx
-    role: rolling-update
   type: LoadBalancer
 
   
