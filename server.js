@@ -1,14 +1,16 @@
 const Hapi = require('@hapi/hapi');
 const mysql = require('mysql');
 const con = mysql.createConnection({
-    host: '34.136.166.203',
-    user: process.env.root,
-    password: process.env.Dilanka123,
-    database: process.env.users,
-    socketPath: '/cloudsql/${process.env.ceremonial-team-348412:us-central1:root}',
-    insecureAuth : true
-});
-
+    host: "",
+    port: "3306",
+    database: "users",
+    username: "root",
+    password: "Dilanka123",
+    socketPath: "/cloudsql/{my-first-project}:{us-central1}:{root}",
+    dialect: "mysql",
+    dialectOptions: {
+          "socketPath": "/cloudsql/{my-first-project}:{us-central1}:{root}"
+    } });
 
 const init = async ()=> {
 const server = Hapi.server({
